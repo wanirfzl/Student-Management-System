@@ -1,15 +1,188 @@
 body{
-    background:#f4f6f9;
+    background:#d6b49f;
+    font-family:'Segoe UI',sans-serif;
 }
 
-.card{
-    border-radius:15px;
+/* Cards */
+
+.form-card,
+.table-card,
+.student-card{
+    background:#f8f2ea;
+    border-radius:25px;
+    padding:24px;
+    box-shadow:
+    0 8px 20px rgba(0,0,0,0.08);
 }
 
-h2{
+/* Total Students Card */
+
+.student-card{
+
+    background:
+    linear-gradient(
+        135deg,
+        #f58b61,
+        #ffb07c
+    );
+
+    color:white;
+
+    min-width:180px;
+
+    text-align:center;
+}
+
+.student-card h2{
+
+    color:white;
+
+    font-size:2rem;
+
+    font-weight:700;
+
+    margin-bottom:5px;
+}
+
+.student-card p{
+
+    color:white;
+
     margin:0;
 }
 
-table{
+/* Heading */
+
+h1{
+
+    color:#5a3d31;
+
+    font-weight:700;
+
+    margin-bottom:5px;
+}
+
+.text-muted{
+
+    color:#8d6e63 !important;
+}
+
+/* Table */
+
+.table{
+
+    width:100%;
+
+    table-layout:fixed;
+
     text-align:center;
+}
+
+.table-header th{
+
+    background:#f58b61 !important;
+
+    color:white !important;
+
+    padding:15px;
+
+    border:none;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+}
+
+/* Table rows */
+
+.table tbody tr{
+
+    transition:0.2s;
+}
+
+.table tbody tr:nth-child(even){
+
+    background:#fff7f1;
+}
+
+.table tbody tr:hover{
+
+    background:#ffe6d5;
+}
+
+.table tbody td{
+
+    padding:15px;
+
+    vertical-align:middle;
+}
+
+/* Inputs */
+
+.form-control,
+.form-select{
+
+    background:white;
+
+    border:2px solid #f1d4c4;
+
+    border-radius:12px;
+
+    padding:12px;
+}
+
+.form-control:focus,
+.form-select:focus{
+
+    border-color:#f58b61;
+
+    box-shadow:
+    0 0 0 0.2rem rgba(245,139,97,0.15);
+}
+
+/* Main button */
+
+.btn-primary{
+
+    background:#f58b61;
+
+    border:none;
+
+    border-radius:12px;
+
+    padding:12px;
+
+    font-weight:600;
+}
+
+.btn-primary:hover{
+
+    background:#ef7f53;
+}
+
+/* Edit button */
+
+.btn-warning{
+
+    background:#7ecfc0;
+
+    border:none;
+
+    color:white;
+}
+
+/* Delete button */
+
+.btn-danger{
+
+    background:#f58b61;
+
+    border:none;
+}
+
+/* Search box */
+
+#searchInput{
+
+    border-radius:12px;
 }
